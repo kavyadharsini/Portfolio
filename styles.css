@@ -1,0 +1,289 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    scroll-behavior: smooth;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Ensure full screen height on all sections */
+section {
+    height: 100vh; /* Ensure each section takes up the full viewport height */
+    display: flex; /* Center the content */
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Remove extra margin */
+    box-sizing: border-box; /* Ensure padding doesn't affect height */
+}
+
+/* For mobile responsiveness */
+.container {
+    height: 100%;
+}
+
+/* Add animations */
+#projects .p-4 {
+  transition: transform 0.3s ease-in-out;
+}
+
+#projects .p-4:hover {
+  transform: scale(1.05);
+}
+
+/* Keyframes and animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-delayed {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Animations */
+.animate-fade-in {
+  animation: fade-in 1.5s ease-out forwards;
+}
+
+.animate-fade-in-delayed {
+  animation: fade-in-delayed 2s ease-out forwards;
+}
+
+.animate-slide-in {
+  animation: fade-in 1.5s ease-out forwards;
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+.animate-ping {
+  animation: ping 2s infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Home section */
+#home {
+  background: url("./images/bg.jpg") no-repeat center center/cover;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Skills section enhancements */
+#skills {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+/* Image scaling on hover in skills section */
+#skills .group img {
+  transition: transform 0.3s ease;
+}
+
+#skills .group:hover img {
+  transform: scale(1.1);
+}
+
+/* Skills section link color change on hover */
+#skills .group a {
+  transition: color 0.3s ease;
+}
+
+#skills .group:hover a {
+  color: #3b82f6;
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: rgba(9, 55, 50, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.glasbg {
+  background: rgba(59, 113, 159, 0.6); /* Semi-transparent version of #3b719f */
+  backdrop-filter: blur(12px); /* Apply blur to the background */
+  border-radius: 15px; /* Optional: rounded corners for the glassy effect */
+  padding: 20px; /* Optional: padding for spacing */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+  position: relative; /* Make sure the element is positioned */
+  overflow: hidden; /* Hide anything that overflows */
+}
+
+/* Neon glow effect for buttons */
+.neon-button {
+  position: relative;
+  padding: 10px 20px;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #093732;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.neon-button:hover {
+  color: #000;
+  background: #093732;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+    0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.neon-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(9, 55, 50, 0.2);
+  border-radius: 25px;
+  z-index: -1;
+  box-shadow: 0 0 10px rgba(9, 55, 50, 1), 0 0 20px rgba(9, 55, 50, 1);
+  transition: all 0.3s ease;
+}
+
+.neon-button:hover::before {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+    0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+/* Parallax effect */
+.parallax {
+  background-image: url("https://via.placeholder.com/1500x1000");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Mobile Responsiveness */
+
+/* For screens smaller than 640px */
+@media (max-width: 640px) {
+    section {
+        height: auto;
+        padding: 20px;
+    }
+    
+    /* Adjust images and icons size */
+    .group img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Make text smaller for mobile */
+    h2, h3, p {
+        font-size: 1.2rem;
+    }
+
+    /* Make buttons more touch-friendly */
+    .neon-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust the map iframe for mobile */
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* For medium screens (tablet, >640px) */
+@media (min-width: 641px) and (max-width: 768px) {
+    h2, h3, p {
+        font-size: 1.5rem;
+    }
+
+    .neon-button {
+        font-size: 1.2rem;
+    }
+}
+
+/* For large screens (desktop) */
+@media (min-width: 1024px) {
+    /* Keep styles as is */
+}
+
+/* Header Sticky and Section Background Effect */
+#main-header {
+  backdrop-filter: blur(10px);
+  background-color: rgba(59, 113, 159, 0.8); /* Default semi-transparent glass effect */
+}
+
+#main-header.scrolled {
+  background-color: rgba(0, 0, 0, 0.9); /* Change background when scrolled */
+}
+
+/* Mobile Menu */
+#mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  display: none;
+  flex-direction: column;
+}

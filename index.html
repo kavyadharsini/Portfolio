@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavyadharsini | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-200 font-sans">
+    <!-- <body class="font-poppins bg-gradient-to-b from-[#093732] to-black text-white"> -->
+    <!-- Header Section -->
+    <header id="main-header" class="glasbg shadow-md fixed w-full top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white"></h1>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-400 transition-colors duration-200">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-400 transition-colors duration-200">About</a></li>
+                <li><a href="#skills" class="hover:text-blue-400 transition-colors duration-200">Skills</a></li>
+                <li><a href="#qualification"
+                        class="hover:text-blue-400 transition-colors duration-200">Qualifications</a></li>
+                <li><a href="#projects" class="hover:text-blue-400 transition-colors duration-200">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-400 transition-colors duration-200">Contact</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-white text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <ul id="mobile-menu" class="hidden flex-col space-y-4 bg-[#3b719f] p-6 text-white text-center md:hidden">
+            <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+            <li><a href="#about" class="hover:text-blue-400">About</a></li>
+            <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+            <li><a href="#qualification" class="hover:text-blue-400">Qualifications</a></li>
+            <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+            <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+        </ul>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home"
+        class="h-screen flex items-center justify-center bg-gray-950 text-white relative overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('images/bg.jpg');"></div>
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+        <!-- Content Wrapper -->
+        <div class="relative z-10 text-center px-6 md:px-16">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 animate-fade-in">👋 Hi, I'm <span
+                    class="text-blue-400">Kavyadharsini</span></h1>
+            <p class="text-lg md:text-2xl mb-6 animate-fade-in-delayed">Full-Stack Developer | Cloud Enthusiast |
+                Problem Solver</p>
+            <div class="flex justify-center gap-4 mt-4">
+                <a href="#projects"
+                    class="bg-transparent border border-blue-500 text-blue-400 px-6 py-3 rounded-full text-lg font-medium hover:bg-blue-500 hover:text-white transition-transform transform hover:scale-105">View
+                    Projects</a>
+                <a href="#contact"
+                    class="bg-transparent border border-blue-500 text-blue-400 px-6 py-3 rounded-full text-lg font-medium hover:bg-blue-500 hover:text-white transition-transform transform hover:scale-105">Hire
+                    Me</a>
+            </div>
+
+            <!-- Download Resume Button -->
+            <div class="flex justify-center gap-4 mt-8">
+                <a href="images/KAVYADHARSINI_RESUME.pdf" target="_blank" download="Kavyadharshini_Resume.pdf"
+                    class="bg-transparent border border-green-600 text-green-600 px-6 py-3 rounded-full text-lg font-medium hover:bg-green-600 hover:text-white transition-transform transform hover:scale-105">
+                    <i class="fas fa-file-download"></i>
+                    <span>Resume</span>
+                </a>
+            </div>
+
+        </div>
+        <!-- Decorative Elements -->
+        <div class="absolute top-10 left-10 w-16 h-16 bg-blue-500 rounded-full opacity-30 animate-pulse"></div>
+        <div class="absolute bottom-20 right-16 w-24 h-24 bg-green-400 rounded-full opacity-40 animate-bounce">
+        </div>
+        <div class="absolute bottom-10 left-1/2 w-12 h-12 bg-pink-500 rounded-full opacity-50 animate-ping"></div>
+
+    </section>
+<!-- About Section -->
+<section id="about" class="h-screen py-[150px] bg-black text-white">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-center gap-12 px-6">
+        <!-- Profile Photo -->
+        <div class="w-full md:w-1/3 flex justify-center relative">
+            <div class="relative">
+                <img src="./images/Kavyadharsini.jpg" alt="Profile Photo"
+                    class="rounded-full border-2 border-gray-500 shadow-lg w-60 h-62 object-cover">
+                <div
+                    class="absolute inset-0 bg-black opacity-30 rounded-full transition-opacity duration-300 hover:opacity-10">
+                </div>
+            </div>
+        </div>
+
+        <!-- About Me Content -->
+        <div class="w-full md:w-2/3 text-center md:text-left">
+            <div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">🙋‍♀️ About Me</h2>
+                <p class="text-lg leading-relaxed mb-6 animate-fade-in-delayed">
+                    I am a passionate <strong>Full-Stack Developer</strong> with over <strong>3 years</strong> of
+                    experience in building user-friendly web applications. Skilled in <strong>ReactJS, NodeJS, PHP,
+                        AWS</strong>, and cloud deployment, I thrive in dynamic, fast-paced environments.
+                </p>
+                <p class="text-lg leading-relaxed mb-6 animate-fade-in-delayed">
+                    My expertise extends to optimizing web applications for performance, scalability, and seamless
+                    user experiences. I'm a problem solver, team player, and tech enthusiast, always ready to
+                    explore new technologies.
+                </p>
+                <p class="text-lg leading-relaxed mb-6 animate-fade-in-delayed">
+                    I’ve worked across industries like <span class="font-semibold">Fintech</span>, <span
+                        class="font-semibold">Agritech</span>, and <span class="font-semibold">Networking</span>,
+                    building
+                    scalable and efficient web applications.
+                </p>
+                <ul class="grid grid-cols-2 gap-4 text-lg animate-fade-in-delayed">
+                    <li>🌟 JavaScript & TypeScript</li>
+                    <li>🌟 ReactJS & Redux</li>
+                    <li>🌟 Node.js & Express</li>
+                    <li>🌟 PHP & SOAP APIs</li>
+                    <li>🌟 AWS Cloud Deployment</li>
+                    <li>🌟 PostgreSQL & MySQL</li>
+                </ul>
+            </div>
+            <a href="#contact"
+                class="mt-6 inline-block bg-blue-500 text-white px-6 py-2 rounded-full text-lg font-medium hover:bg-blue-400 transition-transform transform hover:scale-105">Let's
+                Connect</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="h-screen py-10 bg-gray-950 text-white">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 animate-fade-in text-center">✨ My Skills</h2>
+            <p class="text-center text-gray-400 mb-8 max-w-2xl mx-auto">
+                Proficient in building scalable and efficient applications across frontend, backend, databases, and
+                cloud technologies.
+            </p>
+
+            </br>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+                <!-- Frontend -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-2xl font-semibold mb-4">Frontend</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Building user-friendly, responsive interfaces.</p>
+                    <div class="flex justify-center gap-4 flex-wrap">
+                        <div class="w-18 text-center flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                alt="ReactJS" title="ReactJS"
+                                class="w-12 h-12 hover:scale-110 transition-transform mb-2">
+                            <span class="text-gray-400 text-sm">ReactJS</span>
+                        </div>
+                        <div class="w-18 text-center flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+                                alt="Redux" title="Redux" class="w-12 h-12 hover:scale-110 transition-transform mb-2">
+                            <span class="text-gray-400 text-sm">Redux</span>
+                        </div>
+                        <div class="w-18 text-center flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                alt="JavaScript" title="JavaScript"
+                                class="w-12 h-12 hover:scale-110 transition-transform mb-2">
+                            <span class="text-gray-400 text-sm">JavaScript</span>
+                        </div>
+                        <div class="w-18 text-center flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                alt="HTML5" title="HTML5" class="w-12 h-12 hover:scale-110 transition-transform mb-2">
+                            <span class="text-gray-400 text-sm">HTML5</span>
+                        </div>
+                        <div class="w-18 text-center flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                alt="CSS3" title="CSS3" class="w-12 h-12 hover:scale-110 transition-transform mb-2">
+                            <span class="text-gray-400 text-sm">CSS3</span>
+                        </div>
+                        <div class="w-18 text-center flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                                alt="Bootstrap" title="Bootstrap"
+                                class="w-12 h-12 hover:scale-110 transition-transform mb-2">
+                            <span class="text-gray-400 text-sm">Bootstrap</span>
+                        </div>
+                        <div class="w-18 text-center flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                                alt="Tailwind" title="Tailwind"
+                                class="w-12 h-12 hover:scale-110 transition-transform mb-2">
+                            <span class="text-gray-400 text-sm">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-2xl font-semibold mb-4">Backend</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Developing robust and secure server-side logic.</p>
+                    <div class="flex justify-center gap-4 flex-wrap">
+                        <div class="w-20 text-center flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                alt="NodeJS" title="NodeJS" class="w-12 h-12 hover:scale-110 transition-transform mb-2">
+                            <span class="text-gray-400 text-sm">NodeJS</span>
+                        </div>
+                        <div class="w-20 text-center flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"
+                                title="PHP" class="w-12 h-12 hover:scale-110 transition-transform mb-2">
+                            <span class="text-gray-400 text-sm">PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-2xl font-semibold mb-4">Databases</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Efficient database management and querying.</p>
+                    <div class="flex justify-center gap-4 flex-wrap">
+                        <div class="w-20 text-center flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                alt="MySQL" title="MySQL" class="w-12 h-12 hover:scale-110 transition-transform mb-2">
+                            <span class="text-gray-400 text-sm">MySQL</span>
+                        </div>
+                        <div class="w-20 text-center flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                                alt="PostgreSQL" title="PostgreSQL"
+                                class="w-12 h-12 hover:scale-110 transition-transform mb-2">
+                            <span class="text-gray-400 text-sm">PostgreSQL</span>
+                        </div>
+                        <div class="w-20 text-center flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                                alt="MongoDB" title="MongoDB"
+                                class="w-12 h-12 hover:scale-110 transition-transform mb-2">
+                            <span class="text-gray-400 text-sm">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-2xl font-semibold mb-4">Cloud</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Deploying scalable and reliable cloud solutions.</p>
+                    <div class="flex justify-center gap-4">
+                        <div class="w-15 text-center flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                                alt="AWS" title="AWS" class="w-24 h-12 hover:scale-110 transition-transform mb-2">
+                            <span class="text-gray-400 text-sm">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Qualification Section (Card-Based Design) -->
+    <section id="qualification" class=" py-20 bg-black text-white">
+        <div class="container mx-auto px-8 md:px-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 animate-fade-in text-center">💼 My Qualifications</h2>
+            <p class="text-lg mb-12 text-gray-300 text-center">
+                Here’s a look at my journey and the positions I’ve held across various projects.
+            </p>
+            <!-- Timeline Container -->
+            <div
+                class="mx-auto w-full sm:w-[80%] md:w-[70%] lg:w-[60%] h-auto sm:h-[300px] md:h-[350px] lg:h-[400px] relative border-l-2 border-gray-600">
+                <!-- Timeline Item 1 -->
+                <div class="mb-10 ml-6">
+                    <div
+                        class="absolute w-10 h-10 bg-blue-500 rounded-full -left-5 border-2 border-gray-600 flex items-center justify-center">
+                        <i class="fas fa-laptop-code text-white text-xl"></i>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-2">Trainee Programmer <span
+                                class="text-base text-pink-300">- Full Time</span></h3>
+                        <p class="text-sm text-gray-300 mb-2">
+                            Ionixx Technologies Pvt Ltd, Chennai, TN, India | Oct 2022 - Present
+                        </p>
+                        <!-- <li class="text-lg text-gray-200">Developed scalable web apps with React, Node.js, and
+                            PostgreSQL.
+                        </li> -->
+                        <!-- <li class="text-lg text-gray-200">Led the front-end for an e-commerce platform.
+                        </li>  -->
+                    </div>
+                </div>
+                <!-- Timeline Item 2 -->
+                <div class="mb-10 ml-6">
+                    <div
+                        class="absolute w-10 h-10 bg-yellow-500 rounded-full -left-5 border-2 border-gray-600 flex items-center justify-center">
+                        <i class="fas fa-cogs text-white text-xl"></i>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-yellow-400 mb-2">Project Trainee <span
+                                class="text-base text-pink-300">- Internship</span></h3>
+                        <p class="text-sm text-gray-300 mb-2">
+                            Ionixx Technologies Pvt Ltd, Chennai, TN, India | Sep 2021 - Sep 2022
+                        </p>
+                        <!-- <li class="text-lg text-gray-200">Developed features using PHP and WordPress.
+                        </li> -->
+                        <!-- <li class="text-lg text-gray-200">Developed features using PHP and WordPress.
+                        </li>
+                        <li class="text-lg text-gray-200">Optimized websites for performance and contributed to
+                            front-end work.
+                        </li> -->
+                    </div>
+                </div>
+                <div class=" mb-10 ml-6">
+                    <div
+                        class="absolute w-10 h-10 bg-green-500 rounded-full -left-5 border-2 border-gray-600 flex items-center justify-center">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-green-400 mb-2">Bachelor of Engineering (B.E) <span
+                                class="text-base text-pink-300">- Computer Science & Engineering</span></h3>
+                        <p class="text-sm text-gray-300 mb-2">
+                            M. Kumarassamy College of Engineering, Karur, TN, India | 2018 - 2022
+                        </p>
+                        <!-- <li class="text-lg text-gray-200">Specialized in Computer Science and Engineering. Focused on web
+                            development, cloud technologies, and AI/ML.
+                        </li> -->
+                        <!-- <li class="text-lg text-gray-200">Specialized in Computer Science and Engineering. Focused on web
+                            development, cloud technologies, and AI/ML.
+                        </li>
+                        <li class="text-lg text-gray-200">Optimized websites for performance and contributed to
+                            front-end work.
+                        </li> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class=" mt-10 container mx-auto px-8 md:px-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 animate-fade-in text-center">🎓 My Education</h2>
+            <p class="text-lg mb-12 text-gray-300 text-center">
+                Here's where I sharpened my skills and gained the knowledge that drives my work.
+            </p>
+            <div class="mx-auto w-full sm:w-[80%] md:w-[70%] lg:w-[60%] h-auto sm:h-[150px] md:h-[150px] lg:h-[200px] relative border-l-2 border-gray-600">
+                <div class=" mb-10 ml-6">
+                    <div
+                        class="absolute w-10 h-10 bg-green-500 rounded-full -left-5 border-2 border-gray-600 flex items-center justify-center">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-green-400 mb-2">Bachelor of Engineering (B.E)</h3>
+                        <p class="text-sm text-gray-300 mb-2">
+                            M. Kumarassamy College of Engineering, Karur, TN, India | 2018 - 2022
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-950 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">🚀 My Projects
+            </h2>
+            <p class="text-lg mb-12">Here are some of the projects I’ve worked on, both professionally and personally.
+            </p>
+            <!-- Section for Workplace Projects -->
+            <div>
+                <h3 class="text-3xl font-semibold mb-6 animate__animated animate__fadeIn animate__delay-1s">Workplace
+                    Projects</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- A2C Project Card -->
+                    <div
+                        class="bg-gradient-to-r from-gray-700 to-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 ease-in-out hover:shadow-xl group">
+                        <h4 class="text-xl font-bold group-hover:text-yellow-300 transition-all duration-300">MyGromor
+                        </h4>
+                        <p class="text-sm mt-2 group-hover:text-gray-300 transition-all duration-300">An e-commerce
+                            website built using ReactJS, Redux, and NodeJS. This project focused on delivering a
+                            user-friendly shopping experience with a responsive interface and seamless integration of
+                            payment systems.</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-r from-gray-700 to-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 ease-in-out hover:shadow-xl group">
+                        <h4 class="text-xl font-bold group-hover:text-yellow-300 transition-all duration-300">Coromandel
+                        </h4>
+                        <p class="text-sm mt-2 group-hover:text-gray-300 transition-all duration-300">A responsive
+                            website built with PHP & WordPress, where I implemented custom themes and plugins. The
+                            project was focused on providing a seamless and personalized user experience for customers.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-r from-gray-700 to-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 ease-in-out hover:shadow-xl group">
+                        <h4 class="text-xl font-bold group-hover:text-yellow-300 transition-all duration-300">A2C
+                            Project</h4>
+                        <p class="text-sm mt-2 group-hover:text-gray-300 transition-all duration-300">A project focused
+                            on integrating communication technologies to manage SIP lines and optimize workflows between
+                            endpoints. Built using Node.js, React, and PostgreSQL for performance and scalability.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section for Personal Projects -->
+            <div>
+                </br>
+                <h3 class="text-3xl font-semibold mb-6 animate__animated animate__fadeIn animate__delay-1s">Personal
+                    Projects</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Dog Breeds Project -->
+                    <a href="https://github.com/kavyadharsini/Dog_Breeds" target="_blank" rel="noopener noreferrer"
+                        class="block">
+                        <div
+                            class="bg-gradient-to-r from-gray-700 to-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 ease-in-out hover:shadow-xl group">
+                            <img src="images/dog_breeds.png" alt="Dog Breeds"
+                                class="w-full h-48 object-cover rounded-md mb-4 transition-all duration-300 group-hover:scale-105">
+                            <h4 class="text-xl font-bold group-hover:text-yellow-300 transition-all duration-300">Dog
+                                Breeds
+                            </h4>
+                            <p class="text-sm mt-2 group-hover:text-gray-300 transition-all duration-300">A collection
+                                of
+                                dog breed photos built using JavaScript. Users can browse different breeds with a sleek
+                                and
+                                intuitive interface.</p>
+                        </div>
+                    </a>
+                    <!-- Shoe E-Commerce Project -->
+                    <a href="https://github.com/kavyadharsini/Shoe_E_Commerce" target="_blank" rel="noopener noreferrer"
+                        class="block">
+                        <div
+                            class="bg-gradient-to-r from-gray-700 to-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 ease-in-out hover:shadow-xl group">
+                            <img src="images/shoe_e.png" alt="Shoe E-Commerce"
+                                class="w-full h-48 object-cover rounded-md mb-4 transition-all duration-300 group-hover:scale-105">
+                            <h4 class="text-xl font-bold group-hover:text-yellow-300 transition-all duration-300">Shoe
+                                E-Commerce</h4>
+                            <p class="text-sm mt-2 group-hover:text-gray-300 transition-all duration-300">An e-commerce
+                                site
+                                for shoes made with JavaScript. It features product catalogs, shopping carts, and
+                                checkout
+                                functionalities to offer a great shopping experience.</p>
+                        </div>
+                    </a>
+                    <!-- SpotRider Cabs Project -->
+                    <!-- <div
+                        class="bg-gradient-to-r from-gray-700 to-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 ease-in-out hover:shadow-xl group">
+                        <img src="https://via.placeholder.com/300x200" alt="SpotRider Cabs"
+                            class="w-full h-48 object-cover rounded-md mb-4 transition-all duration-300 group-hover:scale-105">
+                        <h4 class="text-xl font-bold group-hover:text-yellow-300 transition-all duration-300">SpotRider
+                            Cabs</h4>
+                        <p class="text-sm mt-2 group-hover:text-gray-300 transition-all duration-300">An online cab
+                            booking system built with JavaScript, providing an intuitive interface for booking rides and
+                            tracking them in real-time.</p>
+                    </div> -->
+                    <!-- Inventory Manager Project -->
+                    <a href="https://github.com/kavyadharsini/Inventory_Manager" target="_blank"
+                        rel="noopener noreferrer" class="block">
+                        <div
+                            class="bg-gradient-to-r from-gray-700 to-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 ease-in-out hover:shadow-xl group">
+                            <img src="images/Inventory-app-dashboard-view.png" alt="Inventory Manager"
+                                class="w-full h-48 object-cover rounded-md mb-4 transition-all duration-300 group-hover:scale-105">
+                            <h4 class="text-xl font-bold group-hover:text-yellow-300 transition-all duration-300">
+                                Inventory
+                                Manager</h4>
+                            <p class="text-sm mt-2 group-hover:text-gray-300 transition-all duration-300">A React-based
+                                web
+                                application to manage and track inventory. It allows for real-time updates, efficient
+                                categorization, and management of stock levels.</p>
+                        </div>
+                    </a>
+                    <!-- Side-Bar-Ant Project -->
+                    <a href="https://github.com/kavyadharsini/Side-Bar-Ant" target="_blank" rel="noopener noreferrer"
+                        class="block">
+                        <div
+                            class="bg-gradient-to-r from-gray-700 to-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 ease-in-out hover:shadow-xl group">
+                            <img src="images/side-bar.png" alt="Side-Bar-Ant"
+                                class="w-full h-48 object-cover rounded-md mb-4 transition-all duration-300 group-hover:scale-105">
+                            <h4 class="text-xl font-bold group-hover:text-yellow-300 transition-all duration-300">
+                                Side-Bar-Ant</h4>
+                            <p class="text-sm mt-2 group-hover:text-gray-300 transition-all duration-300">A sidebar
+                                navigation system built with Ant Design. It features a collapsible side menu that
+                                displays
+                                content within a fixed box. Includes breadcrumb navigation for easy orientation.</p>
+                        </div>
+                    </a>
+
+                    <!-- Instagram Profile Page Design -->
+                    <a href="https://github.com/kavyadharsini/Instagram_ProfilePage_Design" target="_blank"
+                        rel="noopener noreferrer" class="block">
+                        <div
+                            class="bg-gradient-to-r from-gray-700 to-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 ease-in-out hover:shadow-xl group">
+                            <img src="images/instagram.png" alt="Instagram Profile Page Design"
+                                class="w-full h-48 object-cover rounded-md mb-4 transition-all duration-300 group-hover:scale-105">
+                            <h4 class="text-xl font-bold group-hover:text-yellow-300 transition-all duration-300">
+                                Instagram
+                                Profile Page Design</h4>
+                            <p class="text-sm mt-2 group-hover:text-gray-300 transition-all duration-300">A design of an
+                                Instagram profile page made with CodeSandbox. It demonstrates an intuitive, clean layout
+                                with user-friendly navigation features.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="h-screen bg-[#172e42] text-white flex items-center justify-center">
+        <div class="container mx-auto text-center">
+            <!-- Heading -->
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 animate__animated animate__fadeIn">
+                <i class="fas fa-phone-alt text-green-500 mr-2 text-5xl"></i> Let's Connect
+            </h2>
+            <p class="text-lg mb-5 animate__animated animate__fadeIn animate__delay-1s">
+                Feel free to reach out to me through the form below or directly on my social media.
+            </p>
+
+            <!-- Social Media Buttons -->
+            <div class="flex mb-5 justify-center gap-6 mt-4">
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/kavyadharsini" target="_blank"
+                    class="bg-black text-white hover:bg-gray-800 px-8 py-4 rounded-full font-semibold text-xl transition-transform transform hover:scale-110 flex items-center">
+                    <i class="fab fa-linkedin text-4xl"></i> <!-- LinkedIn Icon -->
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/kavyadharsini" target="_blank"
+                    class="bg-black text-white hover:bg-gray-800 px-8 py-4 rounded-full font-semibold text-xl transition-transform transform hover:scale-110 flex items-center">
+                    <i class="fab fa-github text-4xl"></i> <!-- GitHub Icon -->
+                </a>
+                <!-- Email -->
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kavyadharsinip@gmail.com" target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-black text-white hover:bg-gray-800 px-8 py-4 rounded-full font-semibold text-xl transition-transform transform hover:scale-110 flex items-center">
+                    <i class="fas fa-envelope text-4xl"></i> <!-- Email Icon -->
+                </a>
+            </div>
+        </br>
+            <div class="mx-auto grid place-items-center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62615.15296706742!2d78.12448494532676!3d11.228487170801142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babce5e3f22014f%3A0xa0ab89ef32c34a77!2sNamakkal%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1736429986665!5m2!1sen!2sus"
+                    width="50%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-gray-950 text-center">
+        <p>© 2025 Kavyadharsini. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
