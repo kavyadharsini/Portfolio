@@ -7,3 +7,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+document.getElementById('menu-toggle').addEventListener('click', () => {
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+});
